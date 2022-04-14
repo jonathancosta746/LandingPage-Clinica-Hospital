@@ -1,0 +1,16 @@
+/*funções*/
+
+@mixin button($textColor: $white-color, $backgroundColor: $secondary-color) {
+    display: block;
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    border-radius: 0.4rem;
+    background: $backgroundColor;
+    cursor: pointer;
+    transition: all 400ms ease;
+
+    &:hover {
+        background: lighten($color: $backgroundColor, $amount: 8%);
+        box-shadow: 0 1rem 1.6rem rgba($black-color, 0.15);
+    }
+}

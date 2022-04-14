@@ -1,0 +1,28 @@
+/*configurações basicas do browser, margem, cores, fontes...*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+$primary-color: #480ca8;
+$primary-color-variant: #4cc9f0;
+$secondary-color: #f72585;
+$white-color: #ffffff;
+$light-color: rgba(#fff, 0.7);
+$black-color: #0c031b;
+$dark-color: rgba($black-color, 0.7);
+$success-color: #54eb72;
+$container-lg: 82%;
+$container-md: 90%;
+
+body {
+    background: $primary-color;
+}

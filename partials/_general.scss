@@ -1,0 +1,63 @@
+/*Configurações genericas de conainers, botões, paragrafos, RESPONSIVIDADE...*/
+
+.container {
+    width: $container-lg;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+    line-height: 1.2;
+}
+
+section {
+    margin-top: 6rem;
+
+    & > h2 {
+        text-align: center;
+    }
+
+    & > p {
+        text-align: center;
+        width: 42%;
+        margin: 0.6rem auto 2.5rem;
+    }
+}
+
+.btn {
+    @include button;
+}
+
+.btn-primary {
+    @include button($white-color, $primary-color);
+}
+
+/*=========MEDIA QUERIES (DISPOSITIVOS MEDIOS) ============*/
+@media screen and (max-width:1024px){
+    .container{
+        width: $container-md;
+    }
+
+    section {
+        & > p {
+            width: 55%;
+        }
+    }
+}
+
+/*=========MEDIA QUERIES (DISPOSITIVOS PEQUENOS) ==========*/
+@media screen and (max-width:600px){
+    section {
+        & > p {
+            width: $container-md;
+        }
+    }
+}
