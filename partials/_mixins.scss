@@ -8,9 +8,23 @@
     background: $backgroundColor;
     cursor: pointer;
     transition: all 400ms ease;
+    color: $textColor;
 
     &:hover {
         background: lighten($color: $backgroundColor, $amount: 8%);
         box-shadow: 0 1rem 1.6rem rgba($black-color, 0.15);
+    }
+}
+
+@mixin gradientBackground {
+    background: linear-gradient(135deg, $primary-color, $primary-color-variant);
+    color: $white-color;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: $white-color;
     }
 }
