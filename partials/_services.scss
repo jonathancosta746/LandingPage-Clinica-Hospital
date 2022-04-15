@@ -1,0 +1,57 @@
+#services {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    article {
+        @include gradientBackground;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        display: Flex;
+        gap: 1.5rem;
+        height: fit-content;
+        transition: all 400ms ease;
+    
+        i{
+            font-size: 1.7rem;
+        }
+    }
+    article:hover {
+        margin-top: -0.5rem;
+}
+}
+
+/*=========MEDIA QUERIES (DISPOSITIVOS MEDIOS) ============*/
+@media screen and (max-width:1024px){
+    #services {
+        .container {
+            gap: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+        
+        article {
+            padding: 1.2rem;
+            gap: 0.8rem
+        }
+        
+        article:hover {
+            margin: 0;
+        }
+        }
+    }
+}
+
+/*=========MEDIA QUERIES (DISPOSITIVOS PEQUENOS) ==========*/
+@media screen and (max-width:600px){
+    #services {
+        .container {
+            grid-template-columns: 1fr;
+        article div h4{
+           
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+  }
+ 
