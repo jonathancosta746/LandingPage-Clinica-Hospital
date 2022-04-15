@@ -8,6 +8,14 @@ body {
     user-select: none;
 }
 
+body {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5;
+    color: $dark-color;
+    background: rgba($primary-color-variant, 0.1);
+    user-select: none;
+}
+
 .container {
     width: $container-lg;
     margin: 0 auto;
