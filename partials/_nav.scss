@@ -1,0 +1,84 @@
+nav {
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    @include gradientBackground;
+    box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+    /*Apenas para telas pequenas e medias*/
+    button {
+        display: none;
+    }
+
+    a{
+        color: $white-color;
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+
+    .nav__logo{
+        color: $white-color;
+    }
+}
+
+
+/*=========MEDIA QUERIES (DISPOSITIVOS MEDIOS) ============*/
+@media screen and (max-width:1024px){
+
+    nav {
+        .container {
+            button {
+                display: inline-block;
+                background: transparent;
+                color: $white-color;
+                font-size: 2rem;
+                cursor: pointer;
+
+                &#close__nav-btn{
+                    display: none;
+                }
+            }
+
+            ul{
+                position: fixed;
+                right: 5%;
+                top: 5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap:0;
+
+                li{
+                    width: 100%;
+
+                    a{
+                        color: $white-color;
+                        height: 100%;
+                        display: block;
+                        padding: 1.5rem 2rem;
+                        border-radius: 0;
+                        background: linear-gradient($primary-color-variant, darken($primary-color-variant,12%));
+
+                        &.btn {
+                            background: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
