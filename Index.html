@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'><!--Link BOXICONS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/><!--Link Swiper's CSS-->
     <title>Hospital</title>
 </head>
 
@@ -229,12 +230,12 @@
 
 
 
-<section id="testimonials">
+<section id="testimonials"  class="swiper mySwiper">
     <h2>O que nossos pacientes falam</h2>
     <p>Essas são as opnições dos nossos pacientes</p>
 
-    <div class="container">
-        <article>
+    <div class="swiper-wrapper">
+        <article class="swiper-slide">
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
             </p>
@@ -249,7 +250,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="swiper-slide">
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
             </p>
@@ -264,7 +265,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="swiper-slide">
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
             </p>
@@ -279,7 +280,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="swiper-slide">
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
             </p>
@@ -294,7 +295,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="swiper-slide">
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
             </p>
@@ -309,7 +310,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="swiper-slide">
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
             </p>
@@ -324,7 +325,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="swiper-slide">
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
             </p>
@@ -339,8 +340,13 @@
             </div>
         </article>
     </div>
+    <div class="swiper-pagination"></div><!--Swiper JS contador de paginas-->
 </section>
 
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><!-- Swiper JS -->
 <script src="./main.js"></script><!--javascript botao menu-->
+
+
 </body>
 </html>

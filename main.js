@@ -16,3 +16,30 @@ const closeNav = () => {
 
 
 closeNavBtn.addEventListener('click', closeNav);
+
+
+
+//testomonials section (swiper js)
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    //Responsive breakpoints
+
+    breakpoints: {
+    // when windows width is >= 600
+    600: {
+        slidesPerView: 2
+    },
+
+    // when windows width is >= 1024
+    1024: {
+        slidesPerView: 3
+    },
+}
+    
+  });
