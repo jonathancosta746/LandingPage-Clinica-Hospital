@@ -9,7 +9,8 @@
         "../partials/_nav.scss",
         "../partials/_header.scss",
         "../partials/_services.scss",
-        "../partials/_doctors.scss"
+        "../partials/_doctors.scss",
+        "../partials/_testimonials.scss"
     ],
     "names": [],
     "file": "style.min.css"
