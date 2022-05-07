@@ -1,0 +1,117 @@
+#doctor {
+    .container {
+        width: 68%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        article {
+            background: $white-color;
+            border-radius: 1rem;
+            box-shadow: 0 1.5rem 1.5rem rgba($black-color, 0.2);
+            position: relative;
+            transition: all 700ms ease;
+
+            &:hover {
+                box-shadow: none;
+
+                .doctor__image::before{
+                    left:0;
+                    border-radius: 1rem;
+                }
+
+                .doctor__socials, .doctor__whatsapp {
+                opacity: 1;
+                visibility: visible;
+                }
+
+
+            }
+
+            .doctor__image {
+                height: 20rem;
+                position: relative;
+                border-radius: 1rem;
+                overflow: hidden;
+
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    background: linear-gradient(135deg, rgba($primary-color, 0.8), rgba($primary-color-variant, 0.8));
+                    border-radius: 50%;
+                    transition: all 1s ease;
+                }
+            }
+
+            .doctor__details {
+                margin: 1.5rem 0;
+                text-align: center;
+            }
+
+            .doctor__socials {
+                position: absolute;
+                top: 1.2rem;
+                right: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 1s 400ms ease;
+
+                a{
+                    background: $white-color;
+                    color: $primary-color;
+                    padding: 0.4rem;
+                    display: flex;
+                    font-size: 0.8rem;
+                    border-radius: 50%;
+                    transition: all 400ms ease;
+
+                    &:hover {
+                        background: $primary-color;
+                        color: $white-color;
+                    }
+                }
+            }
+
+            .doctor__whatsapp{
+                background: $success-color;
+                color: $white-color;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 30%;
+                padding: 1rem;
+                border-radius: 50%;
+                display: flex;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 1s 400ms ease;
+            }
+        }
+    }
+}
+
+/*=========MEDIA QUERIES (DISPOSITIVOS MEDIOS) ============*/
+@media screen and (max-width:1024px){
+    #doctor{
+        .container{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+/*=========MEDIA QUERIES (DISPOSITIVOS PEQUENOS) ==========*/
+@media screen and (max-width:600px){
+    #doctor{
+        .container{
+            grid-template-columns: 1fr;
+        }
+    }
+}

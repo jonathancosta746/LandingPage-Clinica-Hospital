@@ -61,9 +61,20 @@ nav {
                 flex-direction: column;
                 align-items: flex-start;
                 gap:0;
+                display: none;
+                opacity: 0;
+                animation: fadeNavItem 700ms ease forwards;
+                
+                    @keyframes fadeNavItem {
+                        0% { }
+                        100%{opacity: 1;}   
+                    }
+                
 
                 li{
                     width: 100%;
+                    
+                    
 
                     a{
                         color: $white-color;
