@@ -17,7 +17,7 @@
 <body>
     <nav>
         <div class="container">
-            <a href="h3" class="nav__logo"><h3>Sua Clinica</h3></a>
+            <a href="#" class="nav__logo"><h3>Sua Clinica</h3></a>
             
             <ul id="nav__items">
                 <li><a href="#">Home</a></li>
@@ -342,7 +342,82 @@
     </div>
     <div class="swiper-pagination"></div><!--Swiper JS contador de paginas-->
 </section>
+<!------------------END OF THE TESTIMUNIALS------------------->
 
+
+
+
+
+
+
+<section id="appointment">
+    <div class="container">
+        <div class="info">
+            <h2>Faça um depoimento</h2>
+            <p>is a long established fact that a reader will be distracted by the readable content of a page</p>
+
+            <article>
+                <div class="info__icon">
+                    <i class='bx bx-user'></i>
+                </div>
+                <div>
+                    <h4>Médicos Experientes</h4>
+                    <small>
+                        is a long established fact that a reader will be distracted by the readable content of a page
+                    </small>
+                </div>
+            </article>
+
+            <article>
+                <div class="info__icon">
+                    <i class='bx bx-reflect-horizontal'></i>
+                </div>
+                <div>
+                    <h4>Tecnologia Avançada</h4>
+                    <small>
+                        is a long established fact that a reader will be distracted by the readable content of a page
+                    </small>
+                </div>
+            </article>
+
+            <article>
+                <div class="info__icon">
+                    <i class='bx bx-first-aid'></i>
+                </div>
+                <div>
+                    <h4>Emergência</h4>
+                    <small>
+                        is a long established fact that a reader will be distracted by the readable content of a page
+                    </small>
+                </div>
+            </article>
+        </div>
+
+        <form action="https://formspree.io/f/mayvaybg" method="POST">
+            <div class="form__group">
+                <label for="name">Nome</label>
+                <input type="text" placeholder="Digite seu nome" name="Nome do Paciente" id="name" required><!--name é o nome do item que irá contar no email-->
+            </div>
+            <div class="form__group">
+                <label for="phone">Telefone</label>
+                <input type="number" placeholder="Digite seu telefone" name="Numero de Telefone" id="number" required>
+            </div>
+            <div class="form__group">
+                <label for="departament">Selecione o setor</label>
+                <select name="Departamento" id="departament" required>
+                    <option value="Recepção">Atendimento da Recepção</option>
+                    <option value="Médico">Atendimento Médico</option>
+                    <option value="Recepção">Estrutura</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <label for="message">Mensagem</label>
+                <textarea name="Mensagem" id="message" rows="6" placeholder="Adicione uma mensagem" required></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensagem" class="btn-primary">
+        </form>
+    </div>
+</section>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><!-- Swiper JS -->
 <script src="./main.js"></script><!--javascript botao menu-->

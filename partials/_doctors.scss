@@ -8,7 +8,7 @@
         article {
             background: $white-color;
             border-radius: 1rem;
-            box-shadow: 0 1.5rem 1.5rem rgba($black-color, 0.2);
+            box-shadow: 0 1.5rem 1.5rem rgba($black-color, 0.1);
             position: relative;
             transition: all 700ms ease;
 
@@ -17,7 +17,7 @@
 
                 .doctor__image::before{
                     left:0;
-                    border-radius: 1rem;
+                    border-radius: 1rem 1rem 0 0;
                 }
 
                 .doctor__socials, .doctor__whatsapp {
@@ -31,7 +31,7 @@
             .doctor__image {
                 height: 20rem;
                 position: relative;
-                border-radius: 1rem;
+                border-radius: 1rem 1rem 0 0;
                 overflow: hidden;
 
                 &::before{

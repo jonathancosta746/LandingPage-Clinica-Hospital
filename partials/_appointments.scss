@@ -1,0 +1,66 @@
+#appointment {
+    .container {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 6%;
+
+    .info {
+        p {
+            margin: 0.5rem 0 2rem;
+        }
+
+        article {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            small{
+                margin-top: 0.4rem;
+                display: block;
+            }
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+
+        .form__group{
+            label{
+                font-size: 0.85rem;
+                margin-bottom: 0.4rem;
+                display: inline-block;
+                font-weight: 600;
+            }
+
+            input, textarea, select {
+                background: $white-color;
+                padding: 0.85rem 1rem;
+                display: block;
+                width: 100%;
+                border-radius: 0.4rem;
+                resize: none;
+                appearance: none;
+            }
+        }
+    }
+  }
+}
+
+/*=========MEDIA QUERIES (DISPOSITIVOS PEQUENOS) ============*/
+@media screen and (max-width:1024px){
+    #appointment {
+        .container{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            .info {
+                h2, p {
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
