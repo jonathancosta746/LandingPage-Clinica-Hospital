@@ -7,7 +7,29 @@ nav {
     place-items: center;
     @include gradientBackground;
     box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
-}
+
+
+    /*NavBar styles on scrool using JS*/
+    &.window-scroll {
+        background: $white-color;
+        .container{
+            button {
+                color: $black-color;
+            }
+            a{
+                color: $black-color;
+
+                & > h3 {
+                    color: $black-color;
+                }
+
+                &.btn {
+                    color: $white-color;
+                }
+                }
+            }
+        }
+    
 
 
 .container{
@@ -34,8 +56,9 @@ nav {
     .nav__logo{
         color: $white-color;
     }
-}
 
+}
+}
 
 /*=========MEDIA QUERIES (DISPOSITIVOS MEDIOS) ============*/
 @media screen and (max-width:1024px){

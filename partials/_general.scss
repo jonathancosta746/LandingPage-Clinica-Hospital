@@ -46,6 +46,11 @@ section {
 
 .btn {
     @include button;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 0.3rem;
 }
 
 .btn-primary {
