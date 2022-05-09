@@ -11,7 +11,8 @@
         "../partials/_services.scss",
         "../partials/_doctors.scss",
         "../partials/_testimonials.scss",
-        "../partials/_appointments.scss"
+        "../partials/_appointments.scss",
+        "../partials/_footer.scss"
     ],
     "names": [],
     "file": "style.min.css"
